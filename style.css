@@ -60,23 +60,58 @@ header .scroll div:nth-child(2) {
 .logo {
   max-width: 250px;
   position: absolute;
-  top: 10%;
+  top: 7%;
   left: 40%;
   z-index: 2;
 }
 
 .hero-image {
   position: absolute;
-  width: 600px;
-  top: 35%;
-  left: 30%;
+  width: 700px;
+  top: 30%;
+  left: 27%;
   z-index: 1;
+  transition: .5s;
 }
 
 
+.hero-image:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+  transition: .5s;
+}
+
 /* bottom nav */
 
+.bottom-nav {
+  position: fixed;
+  margin: 0 auto;
+  text-align: center;
+  bottom: 40px;
+  width: 100%;
+}
 
+.bottom-nav ul li {
+  display: inline-block;
+}
+
+.bottom-nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 auto;
+  font-family: 'Work Sans', serif;
+  font-weight: 600;
+  color: #fc8c08;
+  text-transform: uppercase;
+  padding: 0 150px;
+  transition: .3s;
+}
+
+.bottom-nav ul li a:hover {
+  color: #242424;
+  transition: .3s;
+  font-weight: 800;
+}
 
 /* scrolling banner */
 @keyframes scroll {
