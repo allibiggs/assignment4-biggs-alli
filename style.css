@@ -2,6 +2,7 @@
   border: 0;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -21,12 +22,18 @@ h2 {
   margin: 15px 40px;
 }
 
+.highlight {
+  font-weight: 800;
+  color: #fc8c08;
+}
+
 header {
   position: relative;
   background: #242424;
   width: 100%;
   height: 8vh;
   overflow: hidden;
+  margin-top: 25px;
 }
 
 header .scroll {
@@ -74,12 +81,12 @@ header .scroll div:nth-child(2) {
   transition: .5s;
 }
 
-
 .hero-image:hover {
   transform: scale(1.2);
   transform-origin: center;
   transition: .5s;
 }
+
 
 /* bottom nav */
 
@@ -105,6 +112,7 @@ header .scroll div:nth-child(2) {
   text-transform: uppercase;
   padding: 0 150px;
   transition: .3s;
+  float: none;
 }
 
 .bottom-nav ul li a:hover {
